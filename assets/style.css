@@ -1,0 +1,94 @@
+body {
+    width: auto;
+}
+.menu-container {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    
+    margin-bottom: 1em;
+    
+}
+
+.menu {
+    
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    height: 65px;
+    align-items: center;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-collapse {
+    transition: width .2s ease-in-out;
+    width: 65px;
+}
+
+.menu-expand {
+    transition: width .2s ease-in-out;
+    width: 90%;
+}
+
+.menu-button {
+    font-size: 4em;
+    background: none;
+    padding: none;
+    position: relative;
+    transition: transform .5s ease-in-out;
+    
+}
+
+.rotate {
+    transform: rotate(135deg);
+}
+
+.button-row{
+    display: flex;
+    position: relative;
+    transition: all .3s;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+img{
+    width: 35px;
+    height: 50px;
+}
+
+.page-btn {
+    
+    border: none;
+    margin: .5em;
+    transition: all .1s ease-in;
+    width: fit-content;
+    height: 25px;
+}
+
+
+.hidden{
+    opacity: 0;
+    visibility: hidden
+}
+
+.erase{
+    display: none;
+}
+
+.wiggle{
+    animation: wiggle 1s .2s 1 ease-in-out;
+}
+
+@keyframes wiggle {
+    0% {transform: rotate(10deg);}
+    25% {transform: rotate(-10deg);}
+    50% {transform: rotate(20deg);}
+    75% {transform: rotate(-5deg);}
+    100% {transform: rotate(0deg);}
+  }
+
